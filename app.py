@@ -15,7 +15,7 @@ colors = {
 }
 
 # Vytvoř dva sloupce
-col1, col2 = st.columns([1, 3])
+col1, col2 = st.columns([1, 2])
 
 with col1:
     selected_color_name = st.selectbox(" ", list(colors.keys()), label_visibility="collapsed")
