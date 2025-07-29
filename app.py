@@ -63,11 +63,11 @@ with st.sidebar:
 nav = st.navigation({
     "Home": [st.Page(page_home, title="  Domů")],
     "Navigace": pages,
-}, expanded=False)
+})
 # --- Spuštění vybrané stránky ---
 nav.run()
 
-with st.expander("See explanation"):
+with st.expander("See explanation", expanded = True):
     st.write('''
         The chart above shows some numbers I picked for you.
         I rolled actual dice for these, so they're *guaranteed* to
