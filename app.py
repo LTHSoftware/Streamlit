@@ -81,7 +81,7 @@ with st.sidebar:
     # Kontejner pro navigaci (bude nahoře)
     with st.container():
         st.markdown("### 📁 Navigace")
-        selected = st.navigation(pages)
+        st.navigation(pages, position="sidebar")
 
     # Jiný container – třeba pro logo, info nebo cokoliv dalšího
     with st.container():
