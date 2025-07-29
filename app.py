@@ -69,23 +69,8 @@ with st.sidebar:
 
 # --- Inicializace navigace ---
 nav = st.navigation({
-    "Home": [st.Page(page_home, title="  Domů")],
-    "Navigace": pages,
+    "**Home**": [st.Page(page_home, title="  Domů")],
+    "**Navigace**": pages,
 }, position="sidebar", expanded=False)
 # --- Spuštění vybrané stránky ---
 nav.run()
-
-
-# --- Sidebar ---
-with st.sidebar:
-    # Kontejner pro navigaci (bude nahoře)
-    with st.container():
-        st.markdown("### 📁 Navigace")
-        st.navigation(pages, position="sidebar")
-
-    # Jiný container – třeba pro logo, info nebo cokoliv dalšího
-    with st.container():
-        st.markdown("---")
-        st.markdown("**Verze aplikace:** `v1.0`")
-        st.image("https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png", width=120)
-
