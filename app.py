@@ -75,7 +75,7 @@ nav = st.navigation({
 # --- Spuštění vybrané stránky ---
 nav.run()
 
-pages = {
+pagesX = {
     "🏠 Hlavní stránka": "home",
     "EU mandatory": {
         "All EU mandatory parts": "all",
@@ -90,7 +90,7 @@ with st.sidebar:
     # Kontejner pro navigaci (bude nahoře)
     with st.container():
         st.markdown("### 📁 Navigace")
-        selected = st.navigation(pages)
+        selected = st.navigation(pagesX)
 
     # Jiný container – třeba pro logo, info nebo cokoliv dalšího
     with st.container():
