@@ -60,7 +60,7 @@ with st.sidebar:
          """, unsafe_allow_html=True)
 
     # --- Inicializace navigace ---
-    st.sidebar.markdown("## Navigace")
+    st.markdown("## Navigace")
     nav = st.navigation({"Navigace": pages}, position="sidebar", expanded=True)
 
 # --- Spuštění vybrané stránky ---
