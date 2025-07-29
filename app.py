@@ -48,7 +48,7 @@ def page_contact():
 
 # --- Definice stránek jako objekty st.Page ---
 pages = [
-    st.Page(page_home, title="  Domů"),
+    # st.Page(page_home, title="  Domů"),
     st.Page(page_about, title="  O aplikaci"),
     st.Page(page_contact, title="  Kontakt"),
 ]
@@ -61,7 +61,7 @@ with st.sidebar:
 
 # --- Inicializace navigace ---
 nav = st.navigation({
-    "Domů": st.Page(page_home, title="  Domů"),
+    "Home": [st.Page(page_home, title="  Domů")],
     "-": [],
     "Navigace": pages,
 }, position="sidebar", expanded=True)
