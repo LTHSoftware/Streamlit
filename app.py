@@ -43,8 +43,24 @@ st.divider()
 # Vložení dvou sloupců hned na začátku sidebaru (jakýsi "header")
 col1, col2 = st.sidebar.columns(2)
 
-col1.image("https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png", width=80)
-col2.image("https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg", width=80)
+col1.markdown(
+    """
+    <div style="display: flex; justify-content: center;">
+        <img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png" style="width: 80px; max-width: 100%;">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+col2.markdown(
+    """
+    <div style="display: flex; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg" style="width: 80px; max-width: 100%;">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # Pak můžeš pokračovat dalším obsahem sidebaru
 st.sidebar.title("Navigace")
