@@ -60,7 +60,7 @@ pages = [
 ]
 
 # --- Inicializace navigace ---
-nav = st.navigation("Navigace": pages, position="sidebar", expanded=True)
+nav = st.navigation({"Navigace": pages}, position="sidebar", expanded=True)
 
 # --- Spuštění vybrané stránky ---
 nav.run()
