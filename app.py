@@ -61,7 +61,7 @@ with st.sidebar:
 
 # --- Inicializace navigace ---
 nav = st.navigation({
-    "Home": [st.Page(page_home, title="  Domů")],
+    "Home": st.Page(page_home, title="  Domů"),
     "-": [],
     "Navigace": pages,
 }, expanded=True)
