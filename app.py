@@ -59,8 +59,8 @@ st.sidebar.markdown("""
 
 st.sidebar.markdown("""
 <div class="sidebar-header">
-    <img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png" alt="Logo 1">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg" alt="Logo 2">
+    <img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png" alt="Logo 1" width="80">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg" alt="Logo 2" width="80">
 </div>
 """, unsafe_allow_html=True)
 
