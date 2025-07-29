@@ -42,22 +42,11 @@ st.divider()
 
 
 col1, col2 = st.sidebar.columns(2)
-
-style = """
-    <div style="
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        height: 100%;
-    ">
-        <img src="{src}" width="80">
-    </div>
-"""
-
-col1.markdown(style.format(src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png"), unsafe_allow_html=True)
-col2.markdown(style.format(src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg"), unsafe_allow_html=True)
+col1.image("https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png", width=80)
+col2.image("https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg", width=80)
 
 
+st.divider()
 # Pak můžeš pokračovat dalším obsahem sidebaru
 st.sidebar.title("Navigace")
 st.sidebar.radio("Vyber stránku", ["Domů", "O aplikaci", "Kontakt"])
