@@ -60,6 +60,7 @@ pages = [
 ]
 
 # --- Inicializace navigace ---
+st.markdown("## Navigace")
 nav = st.navigation({"Navigace": pages}, position="sidebar", expanded=True)
 
 # --- Spuštění vybrané stránky ---
