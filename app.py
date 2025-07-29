@@ -48,3 +48,12 @@ page = st.sidebar.radio("Vyber stránku", ["Domů", "O aplikaci", "Kontakt"])
 # Hlavní obsah podle výběru
 st.title(page)
 st.write(f"Toto je stránka {page}")
+
+# Vytvoříme dva sloupce v sidebaru s poměrem 1:1 (tedy 50 % každý)
+col1, col2 = st.sidebar.columns(2)
+
+# Obrázek/logo v prvním sloupci
+col1.image("https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png", width=80)
+
+# Obrázek/logo v druhém sloupci
+col2.image("https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg", width=80)
