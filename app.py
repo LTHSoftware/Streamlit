@@ -40,29 +40,11 @@ with col2:
 
 st.divider()
 
-st.sidebar.markdown("""
-    <style>
-    .sidebar-header {
-        padding: 10px 0 15px 0;
-        border-bottom: 1px solid #ddd;
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;  /* <-- tady je klíč k vert. zarovnání */
-    }
-    .sidebar-header img {
-        display: block;
-        max-height: 60px;   /* případně uprav podle potřeby */
-    }
-    </style>
-""", unsafe_allow_html=True)
+# Vložení dvou sloupců hned na začátku sidebaru (jakýsi "header")
+col1, col2 = st.sidebar.columns(2)
 
-st.sidebar.markdown("""
-<div class="sidebar-header">
-    <img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png" alt="Logo 1" width="80">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg" alt="Logo 2" width="80">
-</div>
-""", unsafe_allow_html=True)
+col1.image("https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png", width=80)
+col2.image("https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg", width=80)
 
 # Pak můžeš pokračovat dalším obsahem sidebaru
 st.sidebar.title("Navigace")
