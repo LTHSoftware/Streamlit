@@ -41,6 +41,7 @@ with col2:
 st.divider()
 
 # Sidebar
+st.sidebar.header("Header Of SideBar")
 st.sidebar.title("Navigace")
 page = st.sidebar.radio("Vyber stránku", ["Domů", "O aplikaci", "Kontakt"])
 
