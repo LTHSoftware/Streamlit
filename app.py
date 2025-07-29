@@ -60,6 +60,10 @@ with st.sidebar:
          """, unsafe_allow_html=True)
 
 # --- Inicializace navigace ---
-nav = st.navigation({"Navigace": pages}, position="sidebar", expanded=True)
+nav = st.navigation({
+    "": st.Page(page_home, title="  Domů"),
+    "": []
+    "Navigace": pages,
+}, position="sidebar", expanded=True)
 # --- Spuštění vybrané stránky ---
 nav.run()
