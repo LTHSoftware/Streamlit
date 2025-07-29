@@ -8,6 +8,7 @@ with st.sidebar:
     
 # --- Funkce definující obsah jednotlivých "stránek" ---
 def page_home():
+    st.title("Hello, World!")
     # Seznam barev
     colors = {
         "Černá": "black",
@@ -40,7 +41,7 @@ def page_home():
     )
     
     with col2:
-        st.markdown('<div class="custom-text">Hello, World!</div>', unsafe_allow_html=True)
+        st.markdown('<div class="custom-text">Streamlit</div>', unsafe_allow_html=True)
 
 
 def page_about():
