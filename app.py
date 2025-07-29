@@ -37,3 +37,13 @@ st.markdown(
 
 with col2:
     st.markdown('<div class="custom-text">Hello, World!</div>', unsafe_allow_html=True)
+
+st.divider()
+
+# Sidebar
+st.sidebar.title("Navigace")
+page = st.sidebar.radio("Vyber stránku", ["Domů", "O aplikaci", "Kontakt"])
+
+# Hlavní obsah podle výběru
+st.title(page)
+st.write(f"Toto je stránka {page}")
