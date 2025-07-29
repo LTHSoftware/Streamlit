@@ -40,26 +40,22 @@ with col2:
 
 st.divider()
 
-# Vložení dvou sloupců hned na začátku sidebaru (jakýsi "header")
+
 col1, col2 = st.sidebar.columns(2)
 
-col1.markdown(
-    """
-    <div style="display: flex; justify-content: center;">
-        <img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png" style="width: 80px; max-width: 100%;">
+style = """
+    <div style="
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100%;
+    ">
+        <img src="{src}" width="80">
     </div>
-    """,
-    unsafe_allow_html=True
-)
+"""
 
-col2.markdown(
-    """
-    <div style="display: flex; justify-content: center;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg" style="width: 80px; max-width: 100%;">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+col1.markdown(style.format(src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png"), unsafe_allow_html=True)
+col2.markdown(style.format(src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg"), unsafe_allow_html=True)
 
 
 # Pak můžeš pokračovat dalším obsahem sidebaru
