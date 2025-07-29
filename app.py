@@ -4,7 +4,7 @@ st.title("Hello, World!")
 st.write("Toto je moje první aplikace ve Streamlitu.")
 
 
-# Seznam barev, které může uživatel vybrat
+# Seznam barev
 colors = {
     "Černá": "black",
     "Červená": "red",
@@ -14,11 +14,14 @@ colors = {
     "Oranžová": "orange"
 }
 
-# Výběr barvy pomocí comboboxu
-selected_color_name = st.selectbox("Vyber barvu písma", list(colors.keys()))
-selected_color = colors[selected_color_name]
+# Vytvoř dva sloupce
+col1, col2 = st.columns([1, 3])
 
-# Vložení CSS pro změnu barvy fontu
+with col1:
+    selected_color_name = st.selectbox(" ", list(colors.keys()), label_visibility="collapsed")
+    selected_color = colors[selected_color_name]
+
+# Vložíme CSS styl pro vybranou barvu
 st.markdown(
     f"""
     <style>
@@ -32,5 +35,5 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Zobrazení textu s aplikovanou třídou
-st.markdown('<div class="custom-text">Hello, World!</div>', unsafe_allow_html=True)
+with col2:
+    st.markdown('<div class="custom-text">Hello, World!</div>', unsafe_allow_html=True)
