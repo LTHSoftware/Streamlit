@@ -64,6 +64,6 @@ nav = st.navigation({
     "Home": [st.Page(page_home, title="  Domů")],
     "-": [],
     "Navigace": pages,
-}, position="sidebar", expanded=True)
+}, expanded=True)
 # --- Spuštění vybrané stránky ---
 nav.run()
