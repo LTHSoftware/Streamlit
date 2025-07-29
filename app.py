@@ -41,11 +41,11 @@ def page_home():
 
     col1, col2, col3 = st.columns([1, 1, 1])
     with col1:
-        st.image("https://upload.wikimedia.org/wikipedia/commons/c/cd/P%C4%8CR_seal_CMYK.svg")
+        st.image("https://upload.wikimedia.org/wikipedia/commons/c/cd/P%C4%8CR_seal_CMYK.svg", width=120)
     with col2:
-        st.image("https://policie.gov.cz/SCRIPT/ViewImage.aspx?physid=1165380&docname=SIRENE.jpg")
+        st.image("https://policie.gov.cz/SCRIPT/ViewImage.aspx?physid=1165380&docname=SIRENE.jpg", width=120)
     with col3:
-        st.image("https://www.beafuture.com/www/public/images/logo.svg")
+        st.image("https://www.beafuture.com/www/public/images/logo.svg", width=120)
 
 def page_about():
     st.header("ℹ️ O aplikaci")
