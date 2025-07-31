@@ -47,6 +47,13 @@ def page_home():
     with col3:
         st.image("https://www.beafuture.com/www/public/images/logo.svg", width=120)
 
+    mscol1, mscol2 = st.columns([1, 1])
+    with mscol1:
+        options = st.multiselect("Choose", ["Pisemnost", "ZavadenaPisemnost", "Personal Indetity System", "Protest instalovany spisem"],[])
+    with mscol2:
+        st.write("You selected: ", options)
+
+
 def page_about():
     st.header("ℹ️ O aplikaci")
     st.write("Toto je stránka 'O aplikaci'.")
